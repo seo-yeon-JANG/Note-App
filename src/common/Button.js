@@ -26,15 +26,15 @@ export const WindowControlButtons = () => {
 };
 
 export const CreateNoteBtn = styled.button`
+  background: ${(props) => props.color || "#ffd228"};
   margin: 1rem;
   padding: 2rem;
   border: none;
   font-size: 2rem;
   border-radius: 10%;
-  background: #ffd228;
   float: right;
   &:hover {
     cursor: pointer;
-    background: #ffbe0a;
+    background: ${(props) => props.hoverColor || "#ffbe0a"};
   }
 `;
